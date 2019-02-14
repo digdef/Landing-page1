@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body, html{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+header{
+	background-color: #212121;
+	width: 100%;
+	display: flex;
+	height: 50px;
+	overflow: hidden;
+	justify-content: center;
+	z-index: 999;
+}
+.header {
+	background:rgba(100,100,100,1);
+	top:-50px;
+	transition: top 0.5s;
+}
+.header.fixed {
+	width:100%;
+	position: fixed;
+	top: 0;
+	background:rgba(100,100,100,0.75);
+}
+.header.fixed ~ .main {
+	margin-top:50px;
+}
+.logo{
+	padding: 5px;
+	color: #fff;
+	background: none;
+	border: 0;
+	outline: none;
+	font-size: 1.7em;
+}
+.logo img{
+	cursor: pointer;
+	max-height: 40px;
+	max-width: 40px;
+}
+.navbarbuttons {
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    width: 10%;
+    transition: all 150ms;
+    outline: none;
+}
+
+.navbarbuttons:hover {
+    background-color: #ff6700;
+}
+.name {
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #fff;
+	background: none;
+	border: 0;
+	outline: none;
+    font-size: 35px;
+}
+.main{
+	font-size: 25px;
+}
+.present{
+	color: white;
+}
+.present img{
+	display: block;
+	width: 100%;
+}
+.present2 {
+	padding-top: 5%;
+	color: #616161;
+	display: flex;
+	justify-content:center;
+	text-align: center;
+}
+.text {
+	padding-top: 20px;
+	width: 400px;
+	color: #616161;
+}
+.present_background {
+	background-color: #101112;
+	text-align: center;
+	color: white;
+	padding-bottom: 15%;
+}
+.present3 {
+	margin-top: 5%;
+	display: flex;
+	justify-content:center;
+}
+.present3_img{
+	max-height: 600px;
+}
+.present_background1 {
+	background: linear-gradient(to bottom,#050505,#151519);
+	text-align: center;
+	padding-bottom: 15%;
+	color: white;
+}
+.present_background2 {
+	background-color: #050505;
+	text-align: center;
+	color: white;
+}
+.specifications{
+	background:linear-gradient(to bottom,#151519,#050505);
+	display: flex;
+	justify-content:center;
+	font-size: 20px;
+	color: #616161;
+}
+.specifications1{
+	justify-content:center;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	display: flex;	
+}
+.display{
+	width: 500px;
+}
+.btn{
+	font-size: 20px;
+	text-decoration: none;
+	border: 0;
+	background-color: #ff6700;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 40px;
+	outline: none;
+	cursor: pointer;
+	color: white;
+}
+.buy{
+	text-align: center;
+}
+
+.link{
+	padding-top: 50px;
+	padding-left: 20%;
+	padding-bottom: 20px;
+	text-decoration: none;
+	color: #dfe5eb; 
+}
+.q{
+	order: 2;
+}
+.w {
+	order: 1;
+}
+@media (min-width: 550px) {
+	.toggle-btn{
+		visibility: hidden;
+		display: none;
+	}
+}
+#sidebar{
+	visibility: hidden;
+	display: none;
+}
