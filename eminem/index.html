@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" media="(min-width: 1000px)" type="text/css" href="css/main.css">
+	<link rel="stylesheet" media="(max-width: 999px)" type="text/css" href="css/mobile.css">
 	<title></title>
 	<script src="js/wow.min.js"></script>
 	<script>
@@ -25,131 +26,135 @@
 	</header>
 	<div class="site">
 		<nav>
+			<button class="toggle-btn" onclick="openMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 			<a href="/">Home</a>
+			<a class="navbarb" href="https://shop.eminem.com/">Shop</a>
+			<a class="navbarb" href="https://www.eminem.com/videoss">Videos</a>
+			<a class="navbarb" href="https://www.eminem.com/tour">Events</a>
+		</nav>
+		<nav id="sidebar">
 			<a href="https://shop.eminem.com/">Shop</a>
 			<a href="https://www.eminem.com/videoss">Videos</a>
 			<a href="https://www.eminem.com/tour">Events</a>
 		</nav>
-<div id="carousel" class="container">
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="div">
-					<a class="link" href="https://www.youtube.com/watch?v=X-TkrWpO75k">Watch</a>
-					<img src="https://www.eminem.com/sites/g/files/aaj4806/f/styles/suzuki_breakpoints_image_desktop-sm_16x9/public/media-youtube/X-TkrWpO75k.jpg?itok=VcjA2Vh5" class="d-block w-100">
+		<div id="carousel" class="container p-5">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="div">
+							<a class="link" href="https://www.youtube.com/watch?v=X-TkrWpO75k">Watch</a>
+							<img src="https://www.eminem.com/sites/g/files/aaj4806/f/styles/suzuki_breakpoints_image_desktop-sm_16x9/public/media-youtube/X-TkrWpO75k.jpg?itok=VcjA2Vh5" class="d-block w-100">
+						</div>
+					</div>
+					<div class="carousel-item ">
+						<div class="div">
+							<a class="link" href="https://www.facebook.com/pg/eminem/photos/?ref=page_internal">Photo</a>
+							<img src="https://scontent.fhrk1-1.fna.fbcdn.net/v/t1.0-9/37340880_10155494700370079_8068849145101680640_o.jpg?_nc_cat=100&_nc_ht=scontent.fhrk1-1.fna&oh=c7cf05eb6d8cfff09fdc2289525c4caf&oe=5CDBF15C" class="d-block w-100">
+						</div>
+					</div>
+					<div class="carousel-item ">
+						<div class="div">
+							<a class="link" href="http://smarturl.it/EminemKamikaze">Kamikaze</a>
+							<img src="img/kamikaze.jpg" class="d-block w-100">
+						</div>
+					</div>
 				</div>
-
-			</div>
-			<div class="carousel-item ">
-				<div class="div">
-					<a class="link" href="https://www.facebook.com/pg/eminem/photos/?ref=page_internal">Photo</a>
-					<img src="https://scontent.fhrk1-1.fna.fbcdn.net/v/t1.0-9/37340880_10155494700370079_8068849145101680640_o.jpg?_nc_cat=100&_nc_ht=scontent.fhrk1-1.fna&oh=c7cf05eb6d8cfff09fdc2289525c4caf&oe=5CDBF15C" class="d-block w-100">
-				</div>
-			</div>
-			<div class="carousel-item ">
-				<div class="div">
-					<a class="link" href="http://smarturl.it/EminemKamikaze">Kamikaze</a>
-					<img src="img/kamikaze.jpg" class="d-block w-100">
-				</div>
+				<a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">next</span>
+				</a>
 			</div>
 		</div>
-		<a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">next</span>
-		</a>
-	</div>
-</div>
 	</div>
 	<div class="discography">
 		<div style="padding-bottom: 5%"></div>
 		<div class="wow fadeIn block">
+			<div class="r text">
+				<h2>Kamikaze</h2>
+			</div>			
 			<div class="l">
 				<img class="img" src="img/kamikaze.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="r text">
-				<h2>Kamikaze</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="l text">
+				<h2>Revival</h2>
+			</div>			
 			<div class="r">
 				<img class="img" src="img/revival.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="l text">
-				<h2>Revival</h2>			
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="r text">
+				<h2>The Marshall Mathers LP 2</h2>
+			</div>			
 			<div class="l">
 				<img class="img" src="img/tmml2.jpg">
 				<button class="buy">Buy</button>
 			</div>	
-			<div class="r text">
-				<h2>The Marshall Mathers LP 2</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="l text">
+				<h2>Recovery</h2>
+			</div>	
 			<div class="r">
 				<img class="img" src="img/Recovery.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="l text">
-				<h2>Recovery</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="r text">
+				<h2>Refill</h2>
+			</div>	
 			<div class="l">
 				<img class="img" src="img/refill.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="r text">
-				<h2>Refill</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="l text">
+				<h2>Encore </h2>
+			</div>	
 			<div class="r">
 				<img class="img" src="img/Encore.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="l text">
-				<h2>Encore </h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="r text">
+				<h2>The Eminem Show</h2>
+			</div>	
 			<div class="l">
 				<img class="img" src="img/tes.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="r text">
-				<h2>The Eminem Show</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="l text">
+				<h2>The Marshall Mathers LP</h2>
+			</div>
 			<div class="r">
 				<img class="img" src="img/tmml.jpg">
 				<button class="buy">Buy</button>
 			</div>
-			<div class="l text">
-				<h2>The Marshall Mathers LP</h2>
-			</div>
 		</div>
 		<div class="wow fadeIn block">
+			<div class="r text">
+				<h2>The Slim Shady LP</h2>
+			</div>
 			<div class="l">
 				<img class="img" src="img/tss.jpg">
 				<button class="buy">Buy</button>
-			</div>			
-			<div class="r text">
-				<h2>The Slim Shady LP</h2>
 			</div>
 		</div>
 	</div>

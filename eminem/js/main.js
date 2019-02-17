@@ -70,3 +70,6 @@ $('.discography').css({
 backgroundPosition: 'center ' + movement + 'px'
 });
 });
+function openMenu(){
+  document.getElementById("sidebar").classList.toggle('active');
+}
