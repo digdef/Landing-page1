@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+* {
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+}
+body {
+  font-size: 1.3em;
+}
+header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(http://cache.umusic.com/_sites/eminem.com/2017/site/images/tour-bg.jpg?dl=0) center no-repeat;
+  background-size: cover;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+nav{
+  position:absolute;
+  z-index: 100;
+  top:0;
+  left:0;
+  background:black;
+  width:100%;
+}
+nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+nav a:hover{
+  text-decoration: none;
+  background:#bf1f24;
+  color:#fff
+}
+.site {
+  padding: 5em 0;
+  text-align: center;
+  background-color: #222;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#333 center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+  -webkit-filter: blur(4px);
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.logo {
+  width: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: .5em 3em;
+  z-index: 2;
+}
+.discography {
+  color: white;
+  background:url(../img/21.jpg)fixed center center/160% no-repeat;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.l {
+  order: 1;
+}
+.r {
+  order: 2;
+}
+.img {
+  display: block;
+  width: 350px;
+}
+.buy {
+  text-align: center;
+  color: white;
+  background-color: #666;
+  font-size: 20px;
+  border: 0;
+  padding: 14px 40px;
+  outline: none;
+  transition: 0.25s;
+  cursor: pointer;
+  width: 350px;
+
+}
+.buy:hover {
+  background:#bf1f24;
+}
+.text {
+  text-align: center;
+  width: 500px;
+  justify-content: center;
+}
+footer {
+  background: black;
+  text-align: center;
+  color: #444;
+}
+footer a {
+  padding-right: 40%
+}
+.div img {
+  object-fit: none;
+  object-position: center;
+  height: 650px;
+}
+.link {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.link:hover {
+  text-decoration: none;
+  color: #bf1f24;
+}
