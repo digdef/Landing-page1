@@ -141,3 +141,11 @@ footer a {
   text-decoration: none;
   color: #bf1f24;
 }
+#sidebar{
+  visibility: hidden;
+  display: none;
+}
+.toggle-btn{
+  visibility: hidden;
+  display: none;
+}
